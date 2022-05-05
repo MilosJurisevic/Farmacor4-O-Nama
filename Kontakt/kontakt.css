@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-left: 20px;
+    height: 40px;
+}
+
+.navbar {
+    position: relative;
+    height: 45px;
+    margin-top: 15px;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgb(247, 240, 227); */
+    /* float: right; */
+
+ }
+ ul li {
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+ ul li a {
+    color: black;
+    font-size: 16px;
+    font-family: arial;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    
+}
+
+ul li a span {
+    display: block;
+    padding: 15px 20px;
+}
+
+ ul li a span::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: rgb(48, 99, 196); */
+    color: #2b5ecc;
+    padding: 15px 20px;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateY(50px);
+    transition: .3s;
+    transform-origin: bottom;
+}
+
+ul li a span:hover::before {
+    transform: rotateX(0deg) translateY(0px);
+} 
+
+.search {
+    float: right;
+    margin-right:20px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 40px;
+    /* box-shadow: 0 0 0 5px #2573ef; */
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    float: right;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.search.active {
+    width: 100px;
+}
+
+.search .input {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    right: 0;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+
+/* .search .icon ::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #287dfc;
+    border-radius: 50%;
+    transform: translate(-4px, -4px);
+}
+
+.search .icon ::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background:  #287dfc;
+    transform: translate(6px, 6px) rotate(315deg);
+} */
+
+.naslovna {
+    position: relative;
+    height: 100vh;
+    background-image: url("./kontaktPozadina.jpg.jpg");
+}
+
+h1{
+    padding-top: 50px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.nasKon {
+    margin-top: 30px;
+    
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;*/
+}
+
+.nasKon a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    color: #fff;
+}
+
+
+label {
+    height: 2000px;
+}
